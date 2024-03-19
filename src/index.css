@@ -1,0 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Imorting globel Skeleton Css For multiple Use */
+@import "react-loading-skeleton/dist/skeleton.css";

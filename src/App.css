@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
+
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+li{
+    list-style-type: disc;
+    padding-bottom: 2px;
+}
+
+.listnone{
+    list-style-type:none !important;
+    padding-bottom: 0px !important;
+}
+
+.popuplist{
+    font-size: 14px;
+    padding: 4px 8px 4px 8px !important;
+}
+
+.popuplist:hover{
+    color: #F9D121;
+    transition: all;
+    background-color: black;
+}
+
+br {
+    margin-bottom: 1rem; /* Adjust the spacing as needed */
+    display: block; /* Ensure line breaks are visible */
+  }
+
+.container{
+    max-width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.custom{
+    width: 10% !important;
+    margin-left: auto !important;
+    margin-right: 15px !important;
+}
+ 
+.gradient{ 
+    background: linear-gradient(#FFE575,#F9D121);
+}
+
+.shadow{
+    box-shadow: 3px 3px 6px 6px rgba(0,0,0,.2);
+}
+
+.transition{
+    transition: .3s;
+}
+
+.Shadow2xl{
+    box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, .2);
+}
+
+
+
+body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar
+{
+	width: 7px;
+	background-color: #F5F5F5;
+}
+
+.customScroll::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+    border-radius: 50px;
+}
+
+.customScroll::-webkit-scrollbar
+{
+	width: 4px;
+    height: 4px;
+    border-radius: 20px;
+	background-color: #F5F5F5;
+}
+
+.customScroll::-webkit-scrollbar-thumb
+{
+	background-color: #F9D121;
+    border-radius: 50px;
+}
+
+
+body::-webkit-scrollbar-thumb
+{
+	background-color: #F9D121;
+    border-radius: 10px;
+}
+
+
+
+input::-webkit-outer-spin-button, 
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media (max-width:768px) {
+    .slick-dots li.slick-active button:before{
+        padding-top: 50px;
+    }
+    
+    .slick-dots li button:before{
+        padding-top: 50px;
+    }    
+
+    #supportchatwidget .circular-widget{
+        bottom:72px;
+        width:50px;
+        height:50px;
+      }
+}
+
+.topheader ul li a.active{
+    background-color: #EAEAEA;
+    font-size: 14px;
+    padding-left: 6px;
+    border-left: 5px solid #F9D121;
+    display: block;
+    width: 70%;
+}
+
+
+/* bottom Mobile header active class apply by clicking on Bottom header button */
+ .bottomheader ul li a.active{ 
+    color: rgb(250 204 21)
+}
+/* bottom Mobile header active class apply by clicking on Bottom header button */
+
+.topheader ul li a.active:hover{
+    transform: scale(.93);
+    transition: .4s;
+}
+
+.recharts-default-legend{
+    display:none;
+}
+
+.parent a.active{
+    border-bottom: 3px solid #F9D121;
+} 
+
+.hidescroll::-webkit-scrollbar{
+    display: none;
+}
+
+.whatsapp{
+    background-color: rgba(37, 211, 102, 1);
+}
+
+/* Create animate thankyou scale popup/ */
+.scaleanimate{
+    animation: 1.5s scale linear infinite;
+}
+
+@keyframes scale {
+    0%{
+     transform: scale(.85);
+    } 
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(.85);
+    }
+}
+
+/*Custom class For width Control of otp input*/
+.widthcontrol{  
+    width: 12% !important;
+}
+/*Custom class For width Control of otp input*/
+
+
+.topMobheader ul li a.active{
+    color:yellow; 
+    font-weight: 800;
+}
+
+
+.topMobheader ul li a.active:hover{
+    transform: scale(.93);
+    transition: .4s;
+}
+
+/* for Animation on Scroll To Top On Home Page */
+.animate{
+  animation: zigZag 1s forwards infinite;
+}
+
+@keyframes zigZag {
+    0%{
+        transform: translateY(15px);
+    } 
+
+    100%{
+        transform: translateY(-10px);
+    } 
+}
+
+/* for Animation on Filter All Program Page Mobile Responsive */
+.putanimation{
+    animation: popup .2s forwards;
+  }
+  
+  @keyframes popup {
+      0%{
+          transform: scaleY(.5);
+      } 
+  
+      100%{
+          transform: scaleY(1);
+      } 
+  }
+
+  /* for Animation on Filter All Program Page Mobile Responsive */
+.animationout{
+    animation: popupout .002s forwards;
+  }
+  
+  @keyframes popupout {
+      0%{
+          transform: scaleY(.5);
+      } 
+  
+      100%{
+          transform: scaleY(0);
+      } 
+  }
+
+  .error{
+    background-color: #FFF1F1 !important;
+    color: black !important;
+    letter-spacing: 1px;
+    font-family: 'Quicksand', sans-serif !important;
+  }
+
+  .success{
+    background-color: #DEFCE6 !important;
+    color: black !important;
+    letter-spacing: 1px;
+    font-family: 'Quicksand', sans-serif !important;
+  }
+
+  .information{
+    background-color: #EDF5FF !important;
+    color: black !important;
+    letter-spacing: 1px;
+    font-family: 'Quicksand', sans-serif !important;
+  }
+
+  .warning{
+    background-color: #FEF8E1 !important;
+    color: black !important;
+    letter-spacing: 1px;
+    font-family: 'Quicksand', sans-serif !important;
+  }
+
+  html{
+    scroll-behavior: smooth;
+  }
+
+  input[type="radio"] {
+    transform: scale(1.5); /* Adjust the scale value to increase or decrease the size */
+  }
+
+  .larger-checkbox {
+    transform: scale(1.4); /* Increase the size */
+    margin-right: 5px; /* Adjust the spacing */
+  }
+
+/* moving anymation for cards while api hit */
+  .movinganimate{ 
+    animation: .4s move linear forwards;
+  }
+
+  @keyframes move {
+     0%{
+       width: 0%;
+     }
+     50%{
+        width: 50%;
+      }
+      100%{
+        width: 100%;
+      }
+  }
+
+  ul{
+    padding-top: 2px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+  }
+
+  .ulIgnore{
+    padding-top: 0px !important;
+    padding-bottom: 4px !important;
+  }
+
+  .hamburgerul{
+    padding-left: 0px !important;
+  }
+  
+ h1{
+    font-size: 1.4em !important;
+    font-weight: bold !important;
+    padding-top: .6rem;
+    padding-bottom: .2rem;
+    letter-spacing: .5px;
+    }
+    
+h2{
+    font-weight: bold !important;
+    font-size: 1.2em !important;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, .8);
+    padding-top: .6rem;
+    padding-bottom: .2rem;
+    letter-spacing: .5px;
+    }
+    
+h3{
+    font-weight: bold !important;
+    font-size: 1.2em !important;
+    padding-top: .6rem;
+    padding-bottom: .2rem;
+    letter-spacing: .5px;
+    }
+    
+h4{
+    font-size: 1em !important;
+    font-weight: bold !important;
+    padding-top: .6rem;
+    padding-bottom: .2rem;
+    letter-spacing: .5px;
+    }
+    
+p{
+    padding-bottom: 1rem;
+    line-height: 2rem;
+    letter-spacing: .5px;
+}
+
+  
+
+
+  
